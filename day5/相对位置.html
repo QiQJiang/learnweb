@@ -1,0 +1,47 @@
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+      <title>wangye</title>
+        <style>
+           /* 通过相对位置我们可以将摆放到页面中的任意位置
+           使用position属性来设置元素的定位
+           可选值
+           static  开启定位
+           relative  开启相对定位
+           absolute  开启绝对定位
+           fixed  开启固定定位
+           一般使用两个值
+            */
+        .box1{
+            width:200px;
+            height:200px;
+            background-color:#bfa;
+
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            position:relative;
+            left:200px;
+            bottom:200px;
+
+           /* margin-left: 200px;
+            margin-top: -200px;*/
+
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background-color:orange;
+            /*margin-top: 200px;*/
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+
+    </body>
+</html>

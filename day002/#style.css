@@ -1,0 +1,14 @@
+p{
+    color:tomato;
+    font-size:20px;
+    background-color:beige;
+}
+.box{
+    font-size:50px;
+}
+span{
+    color:chocolate;
+}
+.box span{
+    color:yellowgreen;
+}

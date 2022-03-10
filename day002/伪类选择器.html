@@ -1,0 +1,74 @@
+<html lang="zh">
+    <meta charset="UTF-8">
+    <head>
+        <title>小网页</title>
+        <style>
+            /*
+             :first-child  第一个子元素（在所有的子元素中找）
+             :first-of-type  同类型中第一个子元素
+             ：last-child
+             :last-of-type
+             :nth--child
+             :nth-of-type
+             :only-child
+             :empty 匹配空元素
+             :not()  否定伪类，表示除了
+
+            */
+            /*
+              div p:first-of-type{
+                color:red;
+              div p:first-of-type{
+                color:red;
+                }
+             */
+            div p:nth-child(odd){
+                color:cyan;
+             }
+            div p:nth-child(even){
+                color: red;
+             }
+            .box1{
+                width:100px;
+                height:100px;
+                border:1px solid darkgoldenrod;
+            }
+            .box2{
+                width:100px;
+                height:100px;
+                border:1px solid black;
+            }
+            div:empty{
+                background-color:antiquewhite;
+            }
+            p:not(.p1){
+                background-color:lightcyan;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+
+
+            <p>我是第三个p元素</p>
+            <p>我是第一个p元素</p>
+            <p>我是第二个p元素</p>
+            <p>我是第三个p元素</p>
+            <p>我是第一个p元素</p>
+            <p>我是第二个p元素</p>
+            <p class="p1">我是第一个p元素</p>
+            <p>我是第二个p元素</p>
+            <p>我是第三个p元素</p>
+            <p>我是第一个p元素</p>
+            <p>我是第二个p元素</p>
+
+        </div>
+        <div class="box1"><p>p</p></div>
+        <div class="box2"></div>
+
+
+
+    </body>
+
+</html>
